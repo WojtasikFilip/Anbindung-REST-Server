@@ -19,15 +19,16 @@
       <p>
         Price: <b>{{ c.price }}</b>
       </p>
-
-      <p>
-        {{ c.description }}
-      </p>
     </div>
 
-    <v-card-actions class="mb-3">
-      <v-btn class="red" color="white--text" @click="buyButton()" :disabled="c.title.includes('RESERVED')">
-        Buy car
+    <v-card-actions class="mb-3 d-flex justify-end">
+      <v-btn
+        class="purple"
+        color="white--text"
+        @click="buyButton()"
+        :disabled="c.title.includes('RESERVED')"
+      >
+        Details
       </v-btn>
     </v-card-actions>
   </v-card>

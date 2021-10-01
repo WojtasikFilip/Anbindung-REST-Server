@@ -1,7 +1,7 @@
 <template>
-  <v-app-bar class="black" height="150">
-    <v-app-bar-title class="ml-5">
-      <v-img src="../../public/logo.png" max-height="100" max-width="290"></v-img>
+  <v-app-bar height="160" elevation="0" class="white d-flex justify-center">
+    <v-app-bar-title>
+      <v-img src="../../public/MotorWorld.png" max-height="200" max-width="290"></v-img>
     </v-app-bar-title>
   </v-app-bar>
 </template>

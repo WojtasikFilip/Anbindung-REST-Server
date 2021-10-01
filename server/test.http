@@ -1,0 +1,28 @@
+GET http://localhost:3000/cars
+###
+PATCH http://localhost:3000/cars/167
+content-Type: application/json
+
+{
+    "status":"reserved"
+}
+###
+DELETE http://localhost:3000/cars/123
+###
+POST http://localhost:3000/cars
+content-Type: application/json
+
+{
+"title": "Bargain!",
+"status": "available",
+"price": "367.100 $",
+"image": "http://localhost:3000/images/car9.png",
+"miles": 85549,
+"yearOfMake": 2012,
+"owner": {
+"firstName": "Minchen",
+"lastName": "Binchen"
+},
+"description": "Lorem ipsum dolor sit amet."
+}
+
