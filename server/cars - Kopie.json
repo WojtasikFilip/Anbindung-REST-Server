@@ -1,0 +1,121 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "title": "Top Deal Of Week!",
+      "price": "189.455 $",
+      "image": "http://localhost:3000/images/car1.png",
+      "miles": 11321,
+      "yearOfMake": 2020,
+      "owner": {
+        "firstName": "Robert",
+        "lastName": "Baumgartner"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 2,
+      "title": "Bargain!",
+      "price": "8.700 $",
+      "image": "http://localhost:3000/images/car2.png",
+      "miles": 113666,
+      "yearOfMake": 2007,
+      "owner": {
+        "firstName": "Moritz",
+        "lastName": "Miedler"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 3,
+      "title": "Fair Price",
+      "price": "91.170 $",
+      "image": "http://localhost:3000/images/car3.png",
+      "miles": 45128,
+      "yearOfMake": 2017,
+      "owner": {
+        "firstName": "Benjamin",
+        "lastName": "Gruber"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 4,
+      "title": "Fair Price",
+      "price": "12.333 $",
+      "image": "http://localhost:3000/images/car4.png",
+      "miles": 98301,
+      "yearOfMake": 2013,
+      "owner": {
+        "firstName": "Ivan",
+        "lastName": "Orsolic"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 5,
+      "title": "Fair Price",
+      "price": "182.900 $",
+      "image": "http://localhost:3000/images/car5.png",
+      "miles": 42771,
+      "yearOfMake": 2019,
+      "owner": {
+        "firstName": "Svetlin",
+        "lastName": "Severelov"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 6,
+      "title": "Best Deal Ever!",
+      "price": "145.322 $",
+      "image": "http://localhost:3000/images/car6.png",
+      "miles": 52811,
+      "yearOfMake": 2018,
+      "owner": {
+        "firstName": "Haroon",
+        "lastName": "Younas"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 7,
+      "title": "Already Sold!",
+      "price": "N/A",
+      "image": "http://localhost:3000/images/car7.png",
+      "miles": 14321,
+      "yearOfMake": 2020,
+      "owner": {
+        "firstName": "Robert",
+        "lastName": "Baumgartner"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 8,
+      "title": "Fair Price",
+      "price": "102.100 $",
+      "image": "http://localhost:3000/images/car8.png",
+      "miles": 112921,
+      "yearOfMake": 2016,
+      "owner": {
+        "firstName": "Victor",
+        "lastName": "Pawlek"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    },
+    {
+      "id": 9,
+      "title": "Bargain!",
+      "price": "367.100 $",
+      "image": "http://localhost:3000/images/car9.png",
+      "miles": 85549,
+      "yearOfMake": 2012,
+      "owner": {
+        "firstName": "Robert",
+        "lastName": "Baumgartner"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat."
+    }
+  ]
+}
