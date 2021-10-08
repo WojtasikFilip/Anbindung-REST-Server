@@ -22,12 +22,7 @@
     </div>
 
     <v-card-actions class="mb-3 d-flex justify-end">
-      <v-btn
-        class="purple"
-        color="white--text"
-        @click="buyButton()"
-        :disabled="c.title.includes('RESERVED')"
-      >
+      <v-btn class="purple" color="white--text" :to="`/details/${c.id}`">
         Details
       </v-btn>
     </v-card-actions>
@@ -39,11 +34,6 @@ export default {
   props: {
     c: {
       type: Object,
-    },
-  },
-  methods: {
-    buyButton() {
-      this.$emit('buyButton', this.c);
     },
   },
 };

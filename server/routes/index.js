@@ -4,7 +4,10 @@ const { getCars, changeStatus, deleteCar, addCar } = require('../model/cars');
 
 const router = express.Router();
 
-router.get('/hello',asyncHandler((req, res) => res.send('Hello')),);
+router.get(
+  '/hello',
+  asyncHandler((req, res) => res.send('Hello')),
+);
 
 router.get(
   '/cars',
