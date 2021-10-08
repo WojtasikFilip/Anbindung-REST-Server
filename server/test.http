@@ -1,10 +1,13 @@
 GET http://localhost:3000/cars
 ###
-PATCH http://localhost:3000/cars/167
+GET http://localhost:3000/car/7
+###
+PATCH http://localhost:3000/cars/1
 content-Type: application/json
 
 {
-    "status":"reserved"
+    "title":"Top Deal of Week!",
+    "status":"available"
 }
 ###
 DELETE http://localhost:3000/cars/123

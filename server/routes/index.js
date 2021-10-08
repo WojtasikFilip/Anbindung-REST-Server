@@ -1,6 +1,6 @@
 const express = require('express');
 const asyncHandler = require('express-async-handler');
-const { getCars, changeStatus, deleteCar, addCar } = require('../model/cars');
+const { getCars, deleteCar, addCar, getCar, changeCarTitleStatus } = require('../model/cars');
 
 const router = express.Router();
 
@@ -14,10 +14,25 @@ router.get(
   asyncHandler((req, res) => res.send(getCars())),
 );
 
+router.get(
+  '/car/:id',
+  asyncHandler((req, res) => {
+    res.send(getCar(req.params.id));
+  }),
+);
+
+// router.patch(
+//   '/cars/:id',
+//   asyncHandler((req, res) => {
+//     const result = changeStatus(req.params.id, req.body.status);
+//     res.status(result.status).json(result);
+//   }),
+// );
+
 router.patch(
   '/cars/:id',
   asyncHandler((req, res) => {
-    const result = changeStatus(req.params.id, req.body.status);
+    const result = changeCarTitleStatus(req.params.id, req.body);
     res.status(result.status).json(result);
   }),
 );

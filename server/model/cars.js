@@ -2,6 +2,8 @@ let cars = require('./cars.json');
 
 const getCars = () => cars;
 
+const getCar = (id) => cars.find((el) => el.id === Number(id));
+
 const changeStatus = (id, status) => {
   const car = cars.find((el) => el.id === id);
   if (car) {
@@ -15,6 +17,13 @@ const changeStatus = (id, status) => {
     msg: `Car with the id ${id} was not found.`,
     status: 404,
   };
+};
+
+const changeCarTitleStatus = (carID, change) => {
+  const car = cars.find((el) => el.id === Number(carID));
+  car.status = change.status;
+  car.title = change.title;
+  return car;
 };
 
 const deleteCar = (id) => {
@@ -44,4 +53,4 @@ const addCar = (body) => {
   };
 };
 
-module.exports = { getCars, changeStatus, deleteCar, addCar };
+module.exports = { getCars, changeStatus, deleteCar, addCar, getCar, changeCarTitleStatus };

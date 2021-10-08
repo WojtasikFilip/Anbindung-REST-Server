@@ -16,12 +16,13 @@
       </span>
       <p />
       <p />
-      <p>
+      <p v-if="c.status === 'available'">
         Price: <b>{{ c.price }}</b>
       </p>
+      <p v-else>Price: <b>N/A</b></p>
     </div>
 
-    <v-card-actions class="mb-3 d-flex justify-end">
+    <v-card-actions class="mb-3 d-flex justify-end" v-if="c.status === 'available'">
       <v-btn class="purple" color="white--text" :to="`/details/${c.id}`">
         Details
       </v-btn>
