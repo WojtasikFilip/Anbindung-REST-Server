@@ -4,26 +4,13 @@ const getCars = () => cars;
 
 const getCar = (id) => cars.find((el) => el.id === Number(id));
 
-const changeStatus = (id, status) => {
-  const car = cars.find((el) => el.id === id);
-  if (car) {
-    car.status = status;
-    return {
-      msg: `Car with the id ${id} was updated.`,
-      status: 200,
-    };
-  }
-  return {
-    msg: `Car with the id ${id} was not found.`,
-    status: 404,
-  };
-};
-
 const changeCarTitleStatus = (carID, change) => {
   const car = cars.find((el) => el.id === Number(carID));
   car.status = change.status;
-  car.title = change.title;
-  return car;
+  return {
+    msg: `Car with the id ${carID} was changed.`,
+    status: 200,
+  };
 };
 
 const deleteCar = (id) => {
@@ -53,4 +40,4 @@ const addCar = (body) => {
   };
 };
 
-module.exports = { getCars, changeStatus, deleteCar, addCar, getCar, changeCarTitleStatus };
+module.exports = { getCars, deleteCar, addCar, getCar, changeCarTitleStatus };

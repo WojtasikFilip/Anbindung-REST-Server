@@ -2,7 +2,7 @@
   <v-card class="my-6 mx-4" max-width="370">
     <v-img height="250" :src="c.image"></v-img>
 
-    <v-card-title>{{ c.title }}</v-card-title>
+    <v-card-title>{{ c.title }} <span v-if="c.status != 'available'"> *RESERVED</span></v-card-title>
     <div class="mx-4">
       <p>
         Owner: <b>{{ c.owner.firstName }} {{ c.owner.lastName }}</b>

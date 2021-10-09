@@ -4,7 +4,9 @@
       <v-img height="600" :src="singleCar.image"></v-img>
 
       <v-card-title
-        ><h4 class="mx-auto">{{ singleCar.title }}</h4></v-card-title
+        ><h4 class="mx-auto">
+          {{ singleCar.title }} <span v-if="singleCar.status != 'available'"> *RESERVED</span>
+        </h4></v-card-title
       >
       <v-simple-table class="text-center">
         <template>
@@ -27,8 +29,8 @@
           </thead>
           <tbody>
             <tr>
-              <td v-if="singleCar.status != 'sold'">{{ singleCar.price }}</td>
-              <td v-else>N/A</td>
+              <td v-if="singleCar.status == 'reserved'">N/A</td>
+              <td v-else>{{ singleCar.price }}</td>
               <td>{{ singleCar.miles }}</td>
               <td>{{ singleCar.yearOfMake }}</td>
               <td>{{ singleCar.owner.firstName }} {{ singleCar.owner.lastName }}</td>
@@ -66,7 +68,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      singleCar: {},
+      singleCar: [],
     };
   },
   props: {
@@ -92,7 +94,6 @@ export default {
         method: 'PATCH',
         contentType: 'application/json',
         data: {
-          title: this.singleCar.title + ' *RESERVED',
           status: 'reserved',
         },
       });
